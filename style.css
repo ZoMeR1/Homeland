@@ -151,17 +151,38 @@ img {
 .botom1{
     position: relative;
     height: 837px;
+    overflow: hidden;
 }
-.botom1{
-
-    background: url('img/image 7.png') no-repeat right ;
+.building{
+    position: absolute;
+    right: -300px;
+    bottom: -100px; 
+    opacity: 70%;
+    animation: anime 3s 1 ease-out;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+@keyframes anime{
+    100%{
+        right: 0px;
+        bottom: 0px;
+        opacity: 1; 
+    }
     
-} 
-.group1 img,
-.group3 img,
-.group2 img{
+}
+.group1{
+    transition: 1s;
+}
+.group1 img{
     max-width: 360px;
     max-height: 360px;
+    transition: 1.5s;
+}
+.group1:hover{
+    transform: scale(1.02);
+}
+.group1:hover img{
+    transform: scale(1.05);
 }
 .block1{
     padding-top: 122px;
@@ -243,13 +264,19 @@ body{
 
 .girl{
     position: sticky;
-    margin-left: 150px;
+    margin-left: auto;
     margin-top: 120px;
     padding-right: 90px;
+    padding-left: 20px;
+    transition: 0.5s;
 }
-
+.girl:hover{
+    transform: scale(1.10);
+}
 .block2{
     margin-top: 173px;
+    margin-right: auto;
+    padding-right: 20px;
     max-width: 557px;
     display: flex;
     flex-direction: column;
@@ -277,6 +304,7 @@ body{
     width: 162px;
     height: 54px;
     background-color: #171717;
+    margin-bottom: 20px;
 }
 
 .bblock2 h3{

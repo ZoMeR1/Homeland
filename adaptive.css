@@ -42,6 +42,11 @@
         padding: 50px;
     }
 }
+@media(max-width:1160px){
+    .girl img{
+        max-width: 100%;
+    }
+}
 @media (max-width:940px) {
     .logos{
         flex-wrap: wrap;
@@ -60,8 +65,8 @@
         content: url('img/icons8-hamburger-menu-96.png');
         padding-left: 24px;
     }
-    .botom1{
-        background: none;
+    .building{
+        display: none;
     }
     .block1{
         display: flex;
@@ -102,7 +107,7 @@
 @media (max-width:610px){
     .blue{
         width: auto;
-        max-width: 610;
+        max-width: 100%;
     }
     .top5 h1{
         font-size: 40px;
@@ -126,5 +131,21 @@
     }
     .ngroup2 h1{
         font-size: 30px;
+    }
+    .ngroup2 h1::before{
+        content: url('img/vector\ 25\ 25.png');
+        max-width: 30px;
+    }
+    .imagegroup img{
+        max-width: 100%;
+    }
+    .block2 h1{
+        font-size: 50px;
+    }
+    .flex_4 h1{
+        font-size: 50px;
+    }
+    .profile{
+        margin-bottom: 20px;
     }
 }
